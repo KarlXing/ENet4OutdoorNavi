@@ -109,6 +109,7 @@ def enet_weighing(dataloader, num_classes, c=1.02):
     the interval of values for the weights. Default: 1.02.
 
     """
+    print("dataloader length", len(dataloader))
     class_count = 0
     total = 0
     for _, label in dataloader:

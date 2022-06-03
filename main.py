@@ -290,6 +290,8 @@ if __name__ == '__main__':
         from data import CamVid as dataset
     elif args.dataset.lower() == 'cityscapes':
         from data import Cityscapes as dataset
+    elif args.dataset.lower() == 'aldrichpark':
+        from data import AldrichPark as dataset
     else:
         # Should never happen...but just in case it does
         raise RuntimeError("\"{0}\" is not a supported dataset.".format(
